@@ -36,5 +36,6 @@ for FILE in `cat proprietary-blobs.txt | grep -v ^# | grep -v ^$ | grep -v ^-`; 
     fi
 
 done
+extract "$MY_DIR"/proprietary-blobs.txt "$SRC"
 
 ./setup-makefiles.sh
